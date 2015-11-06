@@ -34,5 +34,10 @@ nmap <C-_> I#<Esc>
 map ZA :wa!<CR>
 map ZZ :xa!<CR>
 
+
+" OCaml
+"let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
+"execute "set rtp+=" . g:opamshare . "/merlin/vim"
+
 "not validate
 "nmap X diw
