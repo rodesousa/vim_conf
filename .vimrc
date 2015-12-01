@@ -1,15 +1,21 @@
+""""""""""""""""""""""""""""""""""""""""""""""""""
 " pathogen
+""""""""""""""""""""""""""""""""""""""""""""""""""
 execute pathogen#infect() 
 
 
+""""""""""""""""""""""""""""""""""""""""""""""""""
 " option general vim
+""""""""""""""""""""""""""""""""""""""""""""""""""
 set nocompatible                            " désactivation de la compatibilité avec vi
 set number                                  " numérotation des lignes
 set laststatus=2                            " afficher toujours la barre de status
 set showcmd                                 " affiche la commande en cours
 
 
+""""""""""""""""""""""""""""""""""""""""""""""""""
 " option color vim
+""""""""""""""""""""""""""""""""""""""""""""""""""
 set background=dark                         " fond sombre
 colorscheme desert                          " couleur
 syntax enable                               " activation de la coloration syntaxique
@@ -18,7 +24,9 @@ set hlsearch                                " surligne les résultats de la rech
 set guifont=Courier\ New\ 10                " police de caractère
 set cursorline                              " afficher la ligne courante
 
+""""""""""""""""""""""""""""""""""""""""""""""""""
 " indentation
+""""""""""""""""""""""""""""""""""""""""""""""""""
 set autoindent                              " indentation automatique avancée
 set smartindent                             " indentation plus intelligente
 set ruler
@@ -26,11 +34,15 @@ set shiftwidth=4                            " nombre de tabulation pour l'indent
 set tabstop=4					            " nombre d'espace pour une tabulation
 
 
+""""""""""""""""""""""""""""""""""""""""""""""""""
 " conf plugin
+""""""""""""""""""""""""""""""""""""""""""""""""""
 filetype plugin indent on                   " détection automatique du type de fichier
 
 
+""""""""""""""""""""""""""""""""""""""""""""""""""
 " en test
+""""""""""""""""""""""""""""""""""""""""""""""""""
 set backspace=indent,eol,start              " autorisation du retour arrière
 set showmatch                               " vérification présence ([ ou { à la frappe de )] ou }
 autocmd FileType text setlocal textwidth=72 " les fichiers de type .txt sont limites à 72 caractères par ligne
@@ -100,11 +112,22 @@ au filetype xml         set omnifunc=xmlcomplete#CompleteTags
 nnoremap <silent> <F8> :TagbarToggle<CR>
 
 
+""""""""""""""""""""""""""""""""""""""""""""""""""
 " OCaml
-"""""let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
-""""execute \"set rtp+=" . g:opamshare . \"/merlin/vim"
+""""""""""""""""""""""""""""""""""""""""""""""""""
+"let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
+"execute \"set rtp+=" . g:opamshare . \"/merlin/vim"
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 "Personnalisation de la barre de statut
 """"""""""""""""""""""""""""""""""""""""""""""""""
 set statusline=%t%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [FENC=%{&fileencoding}]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v]\ [%p%%]\ [LEN=%L]
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" neocomplete
+""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:acp_enableAtStartup = 1                           " enable AutoComplPop.
+let g:neocomplete#enable_at_startup = 1                 " Use neocomplete.
+let g:neocomplete#enable_smart_case = 1                 " Use smartcase.
+let g:neocomplete#sources#syntax#min_keyword_length = 3 " Set minimum syntax keyword length.
+let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
