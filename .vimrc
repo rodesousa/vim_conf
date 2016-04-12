@@ -75,8 +75,8 @@ map <C-c> "+y
 """""""""""""""""""""""""""""""""""""""""""""""""
 " inverse nbr ligne
 nmap <F12> :set invnumber<CR>
-" NERDTREE SUX
-nmap <C-k> :Vex<CR>
+" NERDTREE 
+nmap <C-k> :NERDTreeToggle<CR>
 "zf a paragraph
 nmap <C-S-b> zfip
 "indent paragraph code
