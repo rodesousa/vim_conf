@@ -69,26 +69,28 @@ au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|
 map <C-x> "+x
 map <C-c> "+y
 
-
 """""""""""""""""""""""""""""""""""""""""""""""""
 """""""""""""""shortcut perso
 """""""""""""""""""""""""""""""""""""""""""""""""
+"
 " inverse nbr ligne
 nmap <F12> :set invnumber<CR>
+"
 " NERDTREE 
 nmap <C-k> :NERDTreeToggle<CR>
+"
 "zf a paragraph
 nmap <C-S-b> zfip
+"
 "indent paragraph code
 nmap <C-l> =ip
+"
 "indent all code
 nmap <C-l><C-a> ggVG=
+"
 " suppr commentaire
 nmap jj (<C-v>)x
-" add commentaire sur un para
-nmap <C-_><C-a> (<C-v>)kI#<Esc><Esc>
-" add commentaire sur une ligne
-nmap <C-_> I#<Esc>
+
 "save
 map ZA :wa!<CR>
 map ZZ :xa!<CR>
