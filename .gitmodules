@@ -1,12 +1,12 @@
-[submodule "./.vim/bundle/Dockerfile.vim/"]
-	path = ./.vim/bundle/Dockerfile.vim/
-	url = https://github.com/ekalinin/Dockerfile.vim.git
-[submodule "./.vim/bundle/vim-signature.vim"]
-	path = ./.vim/bundle/vim-signature.vim
-	url = https://github.com/kshenoy/vim-signature.git
 [submodule ".vim/bundle/nerdcommenter"]
 	path = .vim/bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
 [submodule ".vim/bundle/vim-auto-save"]
 	path = .vim/bundle/vim-auto-save
 	url = https://github.com/907th/vim-auto-save.git
+[submodule ".vim/bundle/vim-signature"]
+	path = .vim/bundle/vim-signature
+	url = https://github.com/kshenoy/vim-signature.git
+[submodule ".vim/bundle/Dockerfile.vim"]
+	path = .vim/bundle/Dockerfile.vim
+	url = https://github.com/ekalinin/Dockerfile.vim.git
